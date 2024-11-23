@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap'); /* الخط أميري */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap'); /* الخط تجوال */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif; /* الخط تجوال */
+    line-height: 1.6;
+    color: #333;
+    direction: rtl; /* إضافة اتجاه النص من اليمين لليسار */
+}
+
+/* General Header Styling */
+.header {
+    background-color: #003366; /* اللون الأزرق الداكن */
+    padding: 15px 20px;
+    color: white;
+    position: fixed; /* الهيدر ثابت */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل بسيط */
+    transition: top 0.3s ease;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navbar Styles */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav ul li {
+    font-size: 1.1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        width: 100%;
+        background-color: #003366; /* خلفية غير شفافة */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav ul li {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav.active {
+        display: block;
+    }
+}
+
+/* Home Section */
+.home-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+        url('images/Home.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.home-content {
+    max-width: 900px;
+    z-index: 2;
+}
+
+.home-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.home-description {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards;
+    animation-delay: 0.3s;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-button {
+    background-color: #003366; /* Dark Blue */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+    transform: translateY(-5px);
+}
+
+.cta-button-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-button-secondary:hover {
+    background-color: white;
+    color: #003366;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Styling for Services Section */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #003366; /* Dark Blue */
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Service Item Styling */
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Icon Styling */
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Service Heading Styling */
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Service Description Styling */
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .services-section h2 {
+        font-size: 2rem; /* Smaller heading on small screens */
+    }
+}
+
+
+/* General About Section Styling */
+.about-section {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Text and Image */
+.about-text:hover {
+    color: #007bff;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+
+/* General Contact Section Styling */
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title styling */
+.contact-section .section-title {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contact Methods */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-method {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-method h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contact-method p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #003366;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-method {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* General Footer Styling */
+.footer {
+    background-color: #003366; /* Dark Blue */
+    color: #f5f5f5; /* Light Text */
+    padding: 60px 20px;
+    text-align: right; /* محاذاة النص لليمين */
+    margin-top: 50px; /* Add spacing from content above */
+    direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: right; /* محاذاة الفقرات لليمين */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-section .social-icons a {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    color: #007bff;
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+
+    .footer-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .intro-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio h2, .services h2, .contact h2, .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services, .contact {
+        padding: 40px 10px;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
