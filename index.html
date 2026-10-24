@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<!--لو هتضيف ايقونة الموقع-->
-    
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,6 +10,20 @@
 
 <body>
     
+<!-- Preloader -->
+
+<div id="preloader">
+    <div class="loader-content">
+        <h1>SHARKAWY <span>DESIGNS</span></h1>
+        <div class="loader-line">
+            <div class="loader-progress"></div>
+        </div>
+        <p>.Less, but better</p>
+    </div>
+</div>
+
+
+
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -156,7 +167,15 @@
             </div>
         </div>
     </footer>
-    
+
+
+<!-- Floating WhatsApp Button -->
+
+<a href="https://wa.me/201114833026" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+   
     <script>
         // JavaScript for Hamburger Menu Toggle
         const hamburger = document.getElementById("hamburger");
@@ -167,6 +186,27 @@
         });
     </script>
 
+
+// JavaScript for Smooth Scrolling 
+
+    <script>
+    (function () {
+        const preloader = document.getElementById('preloader');
+
+        function hidePreloader() {
+            if (preloader) {
+                preloader.classList.add('loader-hidden');
+            }
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 700);
+        });
+
+        // حماية إضافية لو حصل تأخير غير متوقع في التحميل
+        setTimeout(hidePreloader, 5000);
+    })();
+</script>
 
 
 </body>
