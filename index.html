@@ -175,6 +175,12 @@
 <i class="fab fa-whatsapp"></i>
 </a>
 
+<!-- Back to Top Button -->
+<button id="backToTop" aria-label="العودة إلى أعلى الصفحة" title="العودة للأعلى">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
    
     <script>
         // JavaScript for Hamburger Menu Toggle
@@ -187,12 +193,12 @@
     </script>
 
 
- 
+
 
     <script>
-        
-        // شاشة التحميل java script
-        
+    
+    // JavaScript for preloader 
+
     (function () {
         const preloader = document.getElementById('preloader');
 
@@ -210,6 +216,28 @@
         setTimeout(hidePreloader, 5000);
     })();
 </script>
+
+
+<script>
+    // JavaScript for Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
 
 
 </body>
