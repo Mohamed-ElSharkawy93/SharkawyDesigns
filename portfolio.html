@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرقاوي ديزاينس</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+        <div id="scrollProgress"></div>
+
+    <!-- شريط التنقل -->
+    <header class="header">
+        <div class="container">
+            
+          <!--لوجو-->
+            <div class="logo">
+                <a href="index.html">
+                    <h1>شرقاوي ديزاينس</h1>
+                </a>
+
+            </div>            
+            <nav class="nav" id="navbar">
+                <ul>
+                    <li><a href="index.html">الرئيسيه</a></li>
+                    <li><a href="index.html#about">من انا</a></li>
+                    <li><a href="index.html#services">خدماتي</a></li>
+                    <li><a href="portfolio.html">معرض اعمالي</a></li>
+                    <li><a href="index.html#contact">تواصل معي</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- معرض الأعمال -->
+    <section id="portfolio">
+        <h2>معرض أعمالي</h2>
+        <div class="portfolio-gallery">
+            <!-- مشروع 1 -->
+            <div class="portfolio-item">
+                <img src="projects/p1.png" alt="مشروع 1" onclick="openImage(this)">
+                <h3>شعار</h3>
+                <p>شعار شرقاوي ديزاينس</p>
+            </div>
+            <!-- مشروع 2 -->
+            <div class="portfolio-item">
+                <img src="projects/p2.png" alt="مشروع 2" onclick="openImage(this)">
+                <h3>سوشيال ميديا</h3>
+                <p>تصميم سوشيال ميديا لجبنه عبور لاند</p>
+            </div>
+            <!-- مشروع 3 -->
+            <div class="portfolio-item">
+                <img src="projects/p3.png" alt="مشروع 3" onclick="openImage(this)">
+                <h3>سوشيال ميديا</h3>
+                <p>تصميم سوشيال ميديا لشاي العروسه</p>
+            </div>
+            <!-- مشروع 4 -->
+            <div class="portfolio-item">
+                <img src="projects/p4.jpg" alt="مشروع 4" onclick="openImage(this)">
+                <h3>سوشيال ميديا</h3>
+                <p>تصميم سوشيال ميديا لبرجر</p>
+            </div>
+            <!-- مشروع 5 -->
+            <div class="portfolio-item">
+                <img src="projects/p5.jpg" alt="مشروع 5" onclick="openImage(this)">
+                <h3>منيو طعام</h3>
+                <p>تصميم منيو لمطعم</p>
+            </div>
+            <!-- مشروع 6 -->
+            <div class="portfolio-item">
+                <img src="projects/p6.jpg" alt="مشروع 6" onclick="openImage(this)">
+                <h3>تصميم بوستر جيم</h3>
+                <p>بوستر لجيم (my GYM) </p>
+            </div>
+            <!-- مشروع 7 -->
+            <div class="portfolio-item">
+                <img src="projects/p7.jpg" alt="مشروع 7" onclick="openImage(this)">
+                <h3>هوية بصريه</h3>
+                <p>هوية بصريه لـ بن(محمد الشرقاوي)</p>
+            </div>
+            <!-- مشروع 8 -->
+            <div class="portfolio-item">
+                <img src="projects/p8.jpg" alt="مشروع 8" onclick="openImage(this)">
+                <h3>غلاف كتاب</h3>
+                <p>تصميم لغلاف كتاب (هذا وطني)</p>
+            </div>
+            <!-- مشروع 9 -->
+            <div class="portfolio-item">
+                <img src="projects/p9.jpg" alt="مشروع 9" onclick="openImage(this)">
+                <h3>هوية بصريه</h3>
+                <p>هوية بصريه لـ (ترتيل)</p>
+            </div>
+            <!-- مشروع 10 -->
+            <div class="portfolio-item">
+                <img src="images/قريباً بإذن الله .jpg" alt="قريباً بإذن الله " onclick="openImage(this)">
+                <h3> قريباً بإذن الله </h3>
+                <p> قريباً بإذن الله </p>
+            </div>
+<!--
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 11" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 12" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 13" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 14" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 15" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 16" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 17" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 18" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 19" onclick="openImage(this)">
+                <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/project10.jpg" alt="مشروع 20" onclick="openImage(this)">
+               <h3>الاسم</h3>
+                <p>الوصف</p>
+            </div>
+
+--> 
+            <!-- إضافة المزيد من المشاريع هنا -->
+        </div>
+
+        <!-- نافذة الصورة المكبرة -->
+        <div id="imageModal" class="image-modal">
+            <span class="close" onclick="closeImage()">×</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <!-- زر مشاهدة المزيد -->
+      <div class="cta-btn-container">
+    <a href="https://www.behance.net/SharkawyDesigns"
+       class="cta-button"
+       target="_blank"
+       rel="noopener noreferrer">
+       للمزيد على بيهانس
+    </a>
+</div>
+
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+
+<a href="https://wa.me/201114833026" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top Button -->
+<button id="backToTop" aria-label="العودة إلى أعلى الصفحة" title="العودة للأعلى">
+    <i class="fas fa-arrow-up"></i>
+</button>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>من هو الشرقاوي؟</h3>
+                    <p>أنا محمد أحمد الشرقاوي، مصمم جرافيك متخصص في تصميم الشعارات، وتصميم المطبوعات، والهويات البصرية. عندي خبرة كبيرة في التصميمات الرقمية، سواء كانت خاصة بالسوشيال ميديا أو تصميمات أخرى تواكب العصر الرقمي. بقدر أقدم لك حلول تصميمية مبتكرة واحترافية تتناسب مع متطلبات السوق وتساعدك في تعزيز علامتك التجارية.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>الصفحات</h3>
+                    <ul>
+                        <li><a href="index.html#home">الرئيسيه</a></li>
+                        <li><a href="index.html#services">خدماتي</a></li>
+                        <li><a href="index.html#contact">تواصل معي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>تواصل معي</h3>
+                    <ul>
+                        <li> <i class="fa-brands fa-whatsapp"></i> : 01114833026 </li>
+                        <li> <i class="fas fa-envelope"></i> : mohamed.elsharkawy9339@gmail.com  </li>
+                        <li> <i class="fas fa-map-marker-alt"></i> : Egypt </li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h3>تابعني علي حساباتي</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61561144320815" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mohamed_elsharkawy01/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-ahmed-172825339/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/SharkawyDesigns" target="_blank"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> شرقاوي ديزاينس | جميع الحقوق محفوظة  2024-2026 &copy;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // فتح الصورة المكبرة
+        function openImage(img) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "flex"; // عرض النافذة
+            modalImg.src = img.src; // تعيين مصدر الصورة المكبرة
+        }
+
+        // غلق الصورة المكبرة
+        function closeImage() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none"; // إخفاء النافذة
+        }
+    </script>
+
+<script>
+    // JavaScript for Hamburger Menu Toggle
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.getElementById("navbar");
+
+    hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+
+<script>
+    // JavaScript for Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script>
+    // JavaScript for Scroll Progress Bar
+    const scrollProgress = document.getElementById('scrollProgress');
+
+    function updateScrollProgress() {
+        const scrollTop = window.scrollY;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+
+        const maxScroll = scrollHeight - clientHeight;
+
+        const progress = maxScroll > 0
+            ? (scrollTop / maxScroll) * 100
+            : 0;
+
+        scrollProgress.style.width = progress + '%';
+    }
+
+    window.addEventListener('scroll', updateScrollProgress, {
+        passive: true
+    });
+
+    window.addEventListener('resize', updateScrollProgress);
+
+    window.addEventListener('load', updateScrollProgress);
+
+    updateScrollProgress();
+</script>
+
+</body>
+</html>
